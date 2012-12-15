@@ -6,6 +6,9 @@
 Firstly you might need to configure your database ( creating database , declaring in database.php and sort of ) Then run Artisan as the following 
 
 php artisan migrate:install 
+
+and then 
+
 php artisan migrate 
 
 Finish !! 

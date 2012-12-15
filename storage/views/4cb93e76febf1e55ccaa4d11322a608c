@@ -1,0 +1,9 @@
+
+ 				<?php \Laravel\Section::start('content'); ?>
+				
+				<h1>Coming Soon !</h1>
+ 				 <?php \Laravel\Section::stop(); ?>
+				
+			
+ <?php echo \Laravel\Section::yield('scripts'); ?>
+<?php echo view('template')->with(get_defined_vars())->render(); ?>

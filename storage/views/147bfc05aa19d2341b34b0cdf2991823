@@ -1,0 +1,17 @@
+
+<?php \Laravel\Section::start('title'); ?>
+ Dayle's Webpage!
+ <?php \Laravel\Section::stop(); ?>
+
+ <?php \Laravel\Section::start('navigation'); ?>
+ @parent
+ <li><a href="#">About</a></li>
+ <?php \Laravel\Section::stop(); ?>
+
+ <?php \Laravel\Section::start('content'); ?>
+ <h1>Holla!</h1>
+ <p>This is url shortener script done with Sweeet <?php echo HTML::link('http://laravel.com', 'Laravel'); ?> </p>
+ <?php \Laravel\Section::stop(); ?>
+ 
+
+<?php echo view('template')->with(get_defined_vars())->render(); ?>

@@ -1,0 +1,24 @@
+
+ 				<?php \Laravel\Section::start('content'); ?>
+				 <h1>TTMY URL Shortener </h1> 
+			 
+				<?php echo Form::open('shortener/create','POST',array('class' => 'form-horizontal') ); ?>
+				
+				<div class="control-group">
+				
+					<?php echo Form::text('givenurl'); ?>
+					<?php echo Form::submit('Shorten Url!',array('id'=>'load')); ?>
+					
+					<span class="help-inline"></span>
+					
+				
+				</div>   <?php //  end of control-group --}} ?>				<?php echo Form::close(); ?>
+				
+							
+				<div id="givenurl"><a href="#"></a></div>
+				<div id="shortenedurl"><a href="#"></a></div>
+				 <?php \Laravel\Section::stop(); ?>
+				
+			
+ <?php echo \Laravel\Section::yield('scripts'); ?>
+<?php echo view('template')->with(get_defined_vars())->render(); ?>

@@ -1,0 +1,9 @@
+div#content{
+	
+	margin: 80px;
+}
+
+div.hero-unit h1 {
+	font-family:"arial narrow";
+	margin-bottom:20px;
+}
